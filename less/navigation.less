@@ -1,17 +1,29 @@
 // Navigation Styles here
 nav{
     display: flex;
-    justify-content: flex-end;
     font-size: 18px;
     font-family: times new roman;
+    align-items: center;
+    height: 60px;
+    width: 800px;
+    margin: 0 auto;
+
+    h2{
+        padding: 0;
+        flex-grow: 1;
+    }
+
+    ul > li {
+        display: inline;
+    }
 
     a {
         margin-left: 25px;
         text-decoration: none;
         color: black;
-        padding-top: 20px;
-        margin-right: 130px;
-        padding-bottom: 15px;
+        // padding-top: 20px;
+        // margin-right: 130px;
+        // padding-bottom: 15px;
     }
 }
 
@@ -19,6 +31,9 @@ nav{
     max-width: 800px;
     width: 100%;
     margin: auto;
+    .bus-picture{
+        border-top: 1px dashed grey;
+    }
     .welcome-bus{
         margin-top: 25px;
     }
