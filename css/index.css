@@ -1,7 +1,7 @@
 .btn {
   border: 1px solid #b2adad;
   font-size: 20px;
-  background: #095d68;
+  background: #17A2B8;
   padding: 10px;
   border-radius: 12px;
   text-align: center;
@@ -119,6 +119,7 @@ section {
 }
 body {
   line-height: 1;
+  color: #212529;
 }
 ol,
 ul {
@@ -187,8 +188,14 @@ nav {
   font-family: times new roman;
   align-items: center;
   height: 60px;
-  width: 800px;
+  max-width: 800px;
+  width: 100%;
   margin: 0 auto;
+}
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+  }
 }
 nav h2 {
   padding: 0;
@@ -200,12 +207,18 @@ nav ul > li {
 nav a {
   margin-left: 25px;
   text-decoration: none;
-  color: black;
+  color: #212529;
 }
 .welcome-section {
   max-width: 800px;
   width: 100%;
   margin: auto;
+}
+@media (max-width: 500px) {
+  .welcome-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 .welcome-section .bus-picture {
   border-top: 1px dashed grey;
@@ -233,13 +246,30 @@ nav a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: column;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -247,6 +277,11 @@ nav a {
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -260,6 +295,13 @@ nav a {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -269,7 +311,19 @@ nav a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 }
