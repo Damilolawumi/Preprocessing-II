@@ -1,1 +1,52 @@
 // Navigation Styles here
+nav{
+    display: flex;
+    font-size: 18px;
+    font-family: times new roman;
+    align-items: center;
+    height: 60px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media @mobile {
+        flex-direction: column;
+    }
+
+    h2{
+        padding: 0;
+        flex-grow: 1;
+    }
+
+    ul > li {
+        display: inline;
+    }
+
+    a {
+        margin-left: 25px;
+        text-decoration: none;
+        color: @font-color;
+        
+    }
+}
+
+.welcome-section {
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+
+    @media @mobile {
+        padding-left: 20px;
+        padding-right: 20px; 
+      }
+
+    .bus-picture{
+        border-top: 1px dashed grey;
+    }
+    .welcome-bus{
+        margin-top: 25px;
+    }
+    .first-bus{
+        border-bottom: 1px dashed grey;
+    }
+}
